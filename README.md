@@ -17,5 +17,9 @@ xhost +local:root
 
     docker run --rm -it --network host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --name crane_x7_dev crane_x7_humble
 
+# setup.bash
+
+    source /opt/ros/humble/setup.bash
+
 
 
