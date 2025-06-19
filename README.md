@@ -21,5 +21,7 @@ xhost +local:root
 
     source /opt/ros/humble/setup.bash
 
+# サンプルプログラム
+https://github.com/rt-net/crane_x7_ros/blob/master/crane_x7_examples/README.md
 
 
