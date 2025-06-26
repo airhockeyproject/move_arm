@@ -35,7 +35,7 @@ xhost +local:root
 
 # サンプルプログラム
 
-    https://github.com/rt-net/crane_x7_ros/tree/humble
+https://github.com/rt-net/crane_x7_ros/tree/humble
 
 
 
