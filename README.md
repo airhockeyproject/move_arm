@@ -15,11 +15,8 @@ xhost +local:root
 
 # コンテナ起動
 
-    docker run --rm -it --network host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --name crane_x7_dev crane_x7_humble
-
-または
-
     docker run --rm -it \
+      --device /dev/ttyUSB0:/dev/ttyUSB0 \
       --network host \
       -e DISPLAY=$DISPLAY \
       -e XAUTHORITY=/tmp/.docker.xauth \
@@ -27,6 +24,7 @@ xhost +local:root
       -v $HOME/.Xauthority:/tmp/.docker.xauth:ro \
       --name crane_x7_dev \
       crane_x7_humble
+
 
 
 # setup.bash
