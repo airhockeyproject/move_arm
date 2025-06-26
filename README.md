@@ -17,6 +17,8 @@ xhost +local:root
 
     docker run --rm -it --network host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --name crane_x7_dev crane_x7_humble
 
+または
+
     docker run --rm -it \
       --network host \
       -e DISPLAY=$DISPLAY \
