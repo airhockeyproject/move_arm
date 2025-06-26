@@ -17,11 +17,23 @@ xhost +local:root
 
     docker run --rm -it --network host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --name crane_x7_dev crane_x7_humble
 
+    docker run --rm -it \
+      --network host \
+      -e DISPLAY=$DISPLAY \
+      -e XAUTHORITY=/tmp/.docker.xauth \
+      -v /tmp/.X11-unix:/tmp/.X11-unix \
+      -v $HOME/.Xauthority:/tmp/.docker.xauth:ro \
+      --name crane_x7_dev \
+      crane_x7_humble
+
+
 # setup.bash
 
     source /opt/ros/humble/setup.bash
 
 # サンプルプログラム
-https://github.com/rt-net/crane_x7_ros/blob/master/crane_x7_examples/README.md
+
+    https://github.com/rt-net/crane_x7_ros/tree/humble
+
 
 
