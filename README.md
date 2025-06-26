@@ -36,4 +36,5 @@ xhost +local:root
 https://github.com/rt-net/crane_x7_ros/tree/humble
 
 
-
+# password
+    weblabHSR
